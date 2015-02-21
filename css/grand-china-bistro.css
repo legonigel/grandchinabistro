@@ -1,0 +1,143 @@
+/*!
+ * Grand China Bistro CSS
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+ /* brand coloring */
+.brand {
+	text-shadow:3px 3px 2px #000;
+	
+	/* WebKit (Safari/Chrome) only */
+	-webkit-text-fill-color: #006835;
+	-webkit-text-stroke: 1px white;
+}
+ 
+.brand-name {
+    color:#006835;
+}
+
+b, strong {
+	color:#006835;
+}
+
+.navbar-default .navbar-brand {
+    color:#006835;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus{
+    color:#005825;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus{
+	font-weight: 700;
+}
+
+.navbar-default .navbar-nav>li>a:focus, 
+.navbar-default .navbar-nav>li>a:hover {
+	font-weight:700;
+	color:#005825;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color:#005825;
+}
+
+.intro-text {
+	font-size: 1.3em;
+}
+
+.navbar-brand {
+	padding: 7px;
+}
+
+
+/* Make images look good on small screens */
+
+.thumbnail{
+	margin-bottom: 0px;
+	margin-right: 12px;
+}
+
+
+@media screen and (min-width:992px){
+	
+	.img-spacer {
+		margin:200px 0px 0px;
+	}	
+
+}
+
+@media screen and (min-width:768px) and (max-width:991px){
+	
+	.img-spacer {
+		margin:100px 0px 0px;
+	}
+	
+	.lunch-col {
+		padding-right:5px;
+	}
+
+}
+
+@media screen and (max-width:480px){
+
+	.thumb-xs-margin{
+		margin-right:80px;
+		margin-bottom:10px;
+		clear:both;
+	}
+
+}
+
+
+/* Menu Description table */
+
+h4.inc-side:after { 
+	vertical-align: super;
+    font-size: x-small;
+	content:"* inc. side of rice";
+}
+
+.menu-col ul {
+	width: 100%; 
+	padding: 0;
+	list-style: none;
+}
+
+.menu-col li {
+	width: 100%;
+	float:left;
+}
+
+
+.menu-item-number {
+	float:left;
+	width:43px;
+}
+.spicy {
+	background-image: url('../img/pepper_small.png');
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+
+.menu-item{
+	padding-left: 0.2em;
+}
+
+.menu-left{
+	float:left;
+}
+
+.menu-price {
+	float:right;
+	padding-left: 0.2em;
+	display: inline-block;
+	text-align:right;
+}
+
+.menu-col li:nth-child(even){
+    background: rgba(0,0,0,0.1);
+}​
