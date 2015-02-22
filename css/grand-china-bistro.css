@@ -82,10 +82,10 @@ b, strong {
 
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:519px){
 
 	.thumb-xs-margin{
-		margin-right:80px;
+		margin-right:100px;
 		margin-bottom:10px;
 		clear:both;
 	}
