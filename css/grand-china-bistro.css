@@ -140,4 +140,18 @@ h4.inc-side:after {
 
 .menu-col li:nth-child(even){
     background: rgba(0,0,0,0.1);
-}​
+}
+
+.dl-bistro dd {
+    margin-left: 115px;
+}
+.dl-bistro dt {
+    width: 95px;
+    float: left;
+    overflow: hidden;
+    clear: left;
+    text-align: right;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
