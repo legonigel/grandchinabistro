@@ -67,6 +67,13 @@
 	</head>
 
 	<body>
+		<div class="alert alert-warning">
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
+			<h3>Temporary Closing</h3>
+			<p>The <strong>Grand China Bistro</strong> is temporarily closed for the next few weeks to allow for an addition to the Jaing family. <br>
+					Check back on <a href="https://www.facebook.com/GrandChinaBistro/">our Facebook page</a> or <a href="index.html">GrandChinaBistro.com</a> to know when we will reopen.<br>
+					Sorry for the inconvenience. </p>
+		</div>
 
 		<div class="brand">Grand China Bistro</div>
 		<div class="address-bar">456 Wythe Creek Rd | Poquoson, VA 23662 | <a href="tel:+17578686177" style="color:#ddf">757.868.6177</a></div>
@@ -189,6 +196,7 @@
 
 		<!-- jQuery -->
 		<script src="js/jquery.js"></script>
+		<script src="js/jquery.cookie.js"></script>
 
 		<!-- Bootstrap Core JavaScript -->
 		<script src="js/bootstrap.min.js"></script>
@@ -198,6 +206,17 @@
 			$('.carousel').carousel({
 				interval: 5000 //changes the speed
 			})
+		</script>
+		<script>
+			jQuery(function( $ ){
+				$('.close').click(function( e ){
+					e.preventDefault();
+					$.cookie('alert-box', 'closed', { path: '/' });
+				});
+				if($.cookie('alert-box') === 'closed'){
+					$('.alert').hide();
+				}
+			});
 		</script>
 
 	</body>
