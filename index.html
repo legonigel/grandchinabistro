@@ -209,9 +209,9 @@
 			jQuery(function( $ ){
 				$('.close').click(function( e ){
 					e.preventDefault();
-					$.cookie('alert-box', 'closed', { path: '/' });
+					$.cookie('success-box', 'closed', { path: '/' });
 				});
-				if($.cookie('alert-box') === 'closed'){
+				if($.cookie('success-box') === 'closed'){
 					$('.alert').hide();
 				}
 			});
