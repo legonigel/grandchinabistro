@@ -7,6 +7,7 @@
 body {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
     background: url('../img/bg.jpg') no-repeat center center fixed;
+    background-size: auto 100vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -204,7 +205,7 @@ footer p {
 }
 
 @media screen and (min-width: 768px) {
-	.collapse-container [class^="col-"] {
-		padding-bottom: 5px;
-	}
+  .collapse-container [class^="col-"] {
+    padding-bottom: 5px;
+  }
 }
