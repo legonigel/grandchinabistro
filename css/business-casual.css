@@ -5,7 +5,7 @@
  */
 
 html {
-  overflow: hidden;
+  overflow: auto;
   height:100%;
 }
 
@@ -17,9 +17,14 @@ body {
     background-size: cover;
     -o-background-size: cover;
     overflow:scroll;
-    overflow-y: scroll;
     -webkit-overflow-scrolling:touch;
     height:100%;
+}
+
+@media screen and (max-width 767) {
+  body {
+    margin-top: 56px;
+  }
 }
 
 h1,
