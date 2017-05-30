@@ -6,6 +6,7 @@
 
 html {
   overflow: hidden;
+  height:100%;
 }
 
 body {
@@ -15,6 +16,10 @@ body {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    overflow:scroll;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling:touch;
+    height:100%;
 }
 
 h1,
