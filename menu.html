@@ -27,9 +27,9 @@
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-		<![endif]-->
+				<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+				<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+				<![endif]-->
 
 		<!-- Google Analytics -->
 		<script>
@@ -85,6 +85,7 @@
 					<!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
 					<a class="navbar-brand" href="index.html">Grand China Bistro</a>
 					<a class="navbar-brand" href="tel:+17578686177" style="color:#4273A2; text-decoration: underline;">757.868.6177</a>
+					<a class="navbar-toggle navbar-brand" style="height:auto" data-toggle="collapse" data-target="#navbar-hours">Hours</a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -93,7 +94,7 @@
 							<a href="index.html">Home</a>
 						</li>
 						<li>
-							<a href="about.html">About</a>
+							<a href="about.html" id="nav-about">About<div class="hidden-xs">(Hours)</div></a>
 						</li>
 						<li>
 							<a href="menu.html">Menu</a>
@@ -101,6 +102,20 @@
 					</ul>
 				</div>
 				<!-- /.navbar-collapse -->
+				<div class="collapse navbar-collapse" id="navbar-hours">
+					<h3>Hours</h3>
+					<div class="center-block" style="width:260px">
+						<dl class="dl-bistro">
+							<dt>Monday: </dt><dd>3:00 pm - 9:00 pm</dd>
+							<dt>Tuesday: </dt><dd>11:00 am - 9:00 pm</dd>
+							<dt>Wednesday: </dt><dd>11:00 am - 9:00 pm</dd>
+							<dt>Thursday: </dt><dd>11:00 am - 9:00 pm</dd>
+							<dt>Friday: </dt><dd>11:00 am - 10:00 pm</dd>
+							<dt>Saturday: </dt><dd>3:00 pm - 10:00 pm</dd>
+							<dt>Sunday: </dt><dd>3:00 pm - 9:00 pm</dd>
+						</dl>
+					</div>
+				</div>
 			</div>
 			<!-- /.container -->
 		</nav>
@@ -126,762 +141,808 @@
 					</div>
 					<div class="row">
 						<div class="col-sm-6 col-md-6 menu-col">
-							<h4>
-								Appetizers
+							<h4 class="collapsed menu-collapse" data-toggle="collapse" data-target="#appetizers-collapse">
+								<span>
+									Appetizers
+								</span>
 							</h4>
-							<ul>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">1.</span><span class="menu-item">Spring Vegetable Rolls (3)</span></div>
-									<span class="menu-price">2.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">2.</span><span class="menu-item">Spring Shrimp Roll (2)</span></div>
-									<span class="menu-price">3.00</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">3.</span><span class="menu-item">Thai Spice Chicken Wing (6)</span></div>
-									<span class="menu-price">6.00</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">4.</span><span class="menu-item">Cilantro Fish Roll (6)</span></div>
-									<span class="menu-price">5.00</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">5.</span><span class="menu-item">Steamed or Pan Fried Dumplings (8)</span></div>
-									<span class="menu-price">5.00</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">6.</span><span class="menu-item">Crispy Pork Belly</span></div>
-									<span class="menu-price">6.00</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">7.</span><span class="menu-item">Chicken With Lettuce Wrap</span></div>
-									<span class="menu-price">7.00</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">8.</span><span class="menu-item">Beef Teriyaki (4)</span></div>
-									<span class="menu-price">5.95</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">8a.</span><span class="menu-item">Cheese Wonton</span></div>
-									<span class="menu-price">4.95</span>
-								</li>
-							</ul>
-							<div style="clear:both;"></div>
+							<div class="collapse panel-collapse" id="appetizers-collapse">
+								<ul>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">1.</span><span class="menu-item">Spring Vegetable Rolls (3)</span></div>
+										<span class="menu-price">2.50</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">2.</span><span class="menu-item">Spring Shrimp Roll (2)</span></div>
+										<span class="menu-price">3.00</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">3.</span><span class="menu-item">Thai Spice Chicken Wing (6)</span></div>
+										<span class="menu-price">6.00</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">4.</span><span class="menu-item">Cilantro Fish Roll (6)</span></div>
+										<span class="menu-price">6.00</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">5.</span><span class="menu-item">Steamed or Pan Fried Dumplings (8)</span></div>
+										<span class="menu-price">5.75</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">6.</span><span class="menu-item">Crispy Pork Belly</span></div>
+										<span class="menu-price">6.75</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">7.</span><span class="menu-item">Chicken With Lettuce Wrap</span></div>
+										<span class="menu-price">7.50</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">8.</span><span class="menu-item">Beef Teriyaki (4)</span></div>
+										<span class="menu-price">6.50</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">8a.</span><span class="menu-item">Cheese Wonton</span></div>
+										<span class="menu-price">4.95</span>
+									</li>
+								</ul>
+							</div>
+							<!-- <div style="clear:both;"></div> -->
 						</div>
 						<div class="col-sm-6 col-md-6 menu-col">
-							<br>
-							<h4>
+							<h4 class="collapsed menu-collapse" data-toggle="collapse" data-target="#soup-collapse">
 								Soup
 							</h4>
-							<ul>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">9.</span><span class="menu-item">Egg Drop, Hot &amp; Sour, or Wonton Soup</span></div>
-									<span class="menu-price">1.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">10.</span><span class="menu-item">Seafood Soup w. Crispy Rice (2)</span></div>
-									<span class="menu-price">7.95</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">11.</span><span class="menu-item">Vegetable Tofu Soup w. Crispy Rice (2)</span></div>
-									<span class="menu-price">6.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">12.</span><span class="menu-item">Crab Meat with Asparagus Soup (2)</span></div>
-									<span class="menu-price">7.95</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">13.</span><span class="menu-item">Fish and Sour Cabbage Soup (2)</span></div>
-									<span class="menu-price">6.95</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">13a.</span><span class="menu-item">House Special Soup w. Crispy Rice (2)</span></div>
-									<span class="menu-price">6.95</span>
-								</li>
-							</ul>
-							<div style="clear:both;"></div>
+							<div class="collapse panel-collapse" id="soup-collapse">
+								<ul>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">9.</span><span class="menu-item">Egg Drop, Hot &amp; Sour, or Wonton Soup</span></div>
+										<span class="menu-price">1.50</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">10.</span><span class="menu-item">Seafood Soup w. Crispy Rice (2)</span></div>
+										<span class="menu-price">8.50</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">11.</span><span class="menu-item">Vegetable Tofu Soup w. Crispy Rice (2)</span></div>
+										<span class="menu-price">6.50</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">12.</span><span class="menu-item">Crab Meat with Asparagus Soup (2)</span></div>
+										<span class="menu-price">7.95</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">13.</span><span class="menu-item">Fish and Sour Cabbage Soup (2)</span></div>
+										<span class="menu-price">6.95</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">13a.</span><span class="menu-item">House Special Soup w. Crispy Rice (2)</span></div>
+										<span class="menu-price">7.50</span>
+									</li>
+								</ul>
+							</div>
+							<!-- <div style="clear:both;"></div> -->
 						</div>
-					</div>
-					<div class="row">
+						<!-- </div> -->
+						<!-- <div class="row"> -->
 						<div class="col-sm-6 col-md-6 menu-col">
-							<br>
-							<h4 class="inc-side">
-								Chicken/Duck
+							<h4 class="collapsed menu-collapse" data-toggle="collapse" data-target="#chicken-collapse">
+								<span class="inc-side">
+									Chicken/Duck
+								</span>
 							</h4>
-							<ul>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">14a.</span><span class="menu-item">Chicken w. Snow Peas or Asparagus</span></div>
-									<span class="menu-price">9.25/ 9.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">14b.</span><span class="menu-item">Chicken w. Cashnut</span></div>
-									<span class="menu-price">9.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">14.</span><span class="menu-item">Kung Pao Chicken Szechuan Style</span></div>
-									<span class="menu-price">9.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">15.</span><span class="menu-item">Chicken w. Garlic Sauce</span></div>
-									<span class="menu-price">8.75</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">16.</span><span class="menu-item">Shan Chy Chicken (White Meat)</span></div>
-									<span class="menu-price">9.95</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">17.</span><span class="menu-item">Crispy Chicken</span></div>
-									<span class="menu-price">8.95</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">18.</span><span class="menu-item">Chicken w. Broccoli</span></div>
-									<span class="menu-price">8.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">19.</span><span class="menu-item">Black Pepper Chicken (White Meat)</span></div>
-									<span class="menu-price">9.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">20.</span><span class="menu-item">Basil Chicken</span></div>
-									<span class="menu-price">9.95</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">21.</span><span class="menu-item">Ginger &amp; Basil Chicken</span></div>
-									<span class="menu-price">9.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">22.</span><span class="menu-item">Smoked Tea Duck</span></div>
-									<span class="menu-price">13.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">23.</span><span class="menu-item">Spicy Fragrant Duck</span></div>
-									<span class="menu-price">13.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">24.</span><span class="menu-item">Guang Duck Gulu Duck</span></div>
-									<span class="menu-price">13.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">24a.</span><span class="menu-item">Crispy Duck</span></div>
-									<span class="menu-price">13.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">25.</span><span class="menu-item">General Tso's or Sesame or Orange Chicken</span></div>
-									<span class="menu-price">9.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">25a.</span><span class="menu-item">Peking Duck (Half/Whole)</span></div>
-									<span class="menu-price">15.00/ 27.95</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">25b.</span><span class="menu-item">Chicken w. Leek</span></div>
-									<span class="menu-price">9.25</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">25c.</span><span class="menu-item">Hunan Chicken</span></div>
-									<span class="menu-price">9.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">25e.</span><span class="menu-item">Sweet &amp; Sour Chicken</span></div>
-									<span class="menu-price">8.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">25f.</span><span class="menu-item">Green Onion &amp; Hot Pepper Chicken</span></div>
-									<span class="menu-price">9.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">25g.</span><span class="menu-item">Sweet Chili Chicken</span></div>
-									<span class="menu-price">9.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">26.</span><span class="menu-item">Chicken w. Vegetable</span></div>
-									<span class="menu-price">8.75</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">27.</span><span class="menu-item">Moo Goo Gai Pan</span></div>
-									<span class="menu-price">8.75</span>
-								</li>
-							</ul>
-							<div style="clear:both;"></div>
+							<div class="collapse panel-collapse" id="chicken-collapse">
+								<ul>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">14a.</span><span class="menu-item">Chicken w. Snow Peas or Asparagus</span></div>
+										<span class="menu-price">9.75</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">14b.</span><span class="menu-item">Chicken w. Cashnut</span></div>
+										<span class="menu-price">9.75</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">14.</span><span class="menu-item">Kung Pao Chicken Szechuan Style</span></div>
+										<span class="menu-price">9.75</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">15.</span><span class="menu-item">Chicken w. Garlic Sauce</span></div>
+										<span class="menu-price">8.75</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">16.</span><span class="menu-item">Shan Chy Chicken (White Meat)</span></div>
+										<span class="menu-price">9.95</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">17.</span><span class="menu-item">Crispy Chicken</span></div>
+										<span class="menu-price">9.25</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">18.</span><span class="menu-item">Chicken w. Broccoli</span></div>
+										<span class="menu-price">8.75</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">19.</span><span class="menu-item">Black Pepper Chicken (White Meat)</span></div>
+										<span class="menu-price">9.75</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">20.</span><span class="menu-item">Basil Chicken</span></div>
+										<span class="menu-price">9.95</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">21.</span><span class="menu-item">Ginger &amp; Basil Chicken</span></div>
+										<span class="menu-price">9.75</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">22.</span><span class="menu-item">Smoked Tea Duck</span></div>
+										<span class="menu-price">15.00</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">23.</span><span class="menu-item">Spicy Fragrant Duck</span></div>
+										<span class="menu-price">15.00</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">24.</span><span class="menu-item">Guang Duck Gulu Duck</span></div>
+										<span class="menu-price">15.00</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">24a.</span><span class="menu-item">Crispy Duck</span></div>
+										<span class="menu-price">15.00</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">25.</span><span class="menu-item">General Tso's or Sesame or Orange Chicken</span></div>
+										<span class="menu-price">9.50</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">25a.</span><span class="menu-item">Peking Duck (Half/Whole)</span></div>
+										<span class="menu-price">17.00/ 30.00</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">25b.</span><span class="menu-item">Chicken w. Leek</span></div>
+										<span class="menu-price">9.50</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">25c.</span><span class="menu-item">Hunan Chicken</span></div>
+										<span class="menu-price">9.50</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">25e.</span><span class="menu-item">Sweet &amp; Sour Chicken</span></div>
+										<span class="menu-price">8.50</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">25f.</span><span class="menu-item">Green Onion &amp; Hot Pepper Chicken</span></div>
+										<span class="menu-price">9.75</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">25g.</span><span class="menu-item">Sweet Chili Chicken</span></div>
+										<span class="menu-price">9.75</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">26.</span><span class="menu-item">Chicken w. Vegetable</span></div>
+										<span class="menu-price">8.75</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">27.</span><span class="menu-item">Moo Goo Gai Pan</span></div>
+										<span class="menu-price">8.75</span>
+									</li>
+								</ul>
+							</div>
+							<!-- <div style="clear:both;"></div> -->
 						</div>
 						<div class="col-sm-6 col-md-6 menu-col">
-							<br>
-							<h4 class="inc-side">
-								Iron Wok
+							<h4 class="collapsed menu-collapse" data-toggle="collapse" data-target="#iron-wok-collapse">
+								<span class="inc-side">
+									Iron Wok
+								</span>
 							</h4>
-							<ul>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">28.</span><span class="menu-item">Qian Long Chicken</span></div>
-									<span class="menu-price">9.75</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">28.</span><span class="menu-item">Qian Long Beef, Shrimp, or Fish</span></div>
-									<span class="menu-price">11.00</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">28.</span><span class="menu-item">Qian Long Duck</span></div>
-									<span class="menu-price">13.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">29.</span><span class="menu-item">Curry Chicken</span></div>
-									<span class="menu-price">9.75</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">29.</span><span class="menu-item">Curry Beef, Shrimp</span></div>
-									<span class="menu-price">10.00/ 10.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">30.</span><span class="menu-item">Hot &amp; Numbing Sauce Chicken</span></div>
-									<span class="menu-price">9.75</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">30.</span><span class="menu-item">Hot &amp; Numbing Sauce Beef, Shrimp, or Fish</span></div>
-									<span class="menu-price">11.00</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">30.</span><span class="menu-item">Hot &amp; Numbing Sauce Combination</span></div>
-									<span class="menu-price">12.75</span>
-								</li>
-							</ul>
-							<div style="clear:both;"></div>
-							<br>
-							<h4 class="inc-side">
-								Clay Hot Pot
-							</h4>
-							<ul>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">31.</span><span class="menu-item">Vegetable Tofu</span></div>
-									<span class="menu-price">8.55</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">32.</span><span class="menu-item">Basil Eggplant</span></div>
-									<span class="menu-price">8.55</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">33.</span><span class="menu-item">Fresh Whole Garlic w. Shrimp, Scallop, or Fish</span></div>
-									<span class="menu-price">10.00</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">34.</span><span class="menu-item">Seafood Tofu</span></div>
-									<span class="menu-price">13.00</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">35.</span><span class="menu-item">Duck w. Shan Hai Green</span></div>
-									<span class="menu-price">13.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">36.</span><span class="menu-item">Sha Cha B.B.Q. Sauce Chicken</span></div>
-									<span class="menu-price">9.75</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">36.</span><span class="menu-item">Sha Cha B.B.Q. Sauce Beef, Shrimp, Fish</span></div>
-									<span class="menu-price">10.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">36.</span><span class="menu-item">Sha Cha B.B.Q. Sauce Seafood</span></div>
-									<span class="menu-price">13.00</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">37.</span><span class="menu-item">Fish Tofu w. Chili Bean Sauce</span></div>
-									<span class="menu-price">10.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">37a.</span><span class="menu-item">Szechuan Spice Beef</span></div>
-									<span class="menu-price">10.50</span>
-								</li>
-							</ul>
-							<div style="clear:both;"></div>
+							<div class="collapse panel-collapse" id="iron-wok-collapse">
+								<ul>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">28.</span><span class="menu-item">Qian Long Chicken</span></div>
+										<span class="menu-price">10.00</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">28.</span><span class="menu-item">Qian Long Beef, Shrimp, or Fish</span></div>
+										<span class="menu-price">11.00</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">28.</span><span class="menu-item">Qian Long Duck</span></div>
+										<span class="menu-price">15.00</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">29.</span><span class="menu-item">Curry Chicken</span></div>
+										<span class="menu-price">10.00</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">29.</span><span class="menu-item">Curry Beef, Shrimp</span></div>
+										<span class="menu-price">11.00</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">30.</span><span class="menu-item">Hot &amp; Numbing Sauce Chicken</span></div>
+										<span class="menu-price">10.00</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">30.</span><span class="menu-item">Hot &amp; Numbing Sauce Beef, Shrimp, or Fish</span></div>
+										<span class="menu-price">11.00</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">30.</span><span class="menu-item">Hot &amp; Numbing Sauce Combination</span></div>
+										<span class="menu-price">13.50</span>
+									</li>
+								</ul>
+							</div>
+							<!-- <div style="clear:both;"></div> -->
 						</div>
-					</div>
-					<div class="row">
 						<div class="col-sm-6 col-md-6 menu-col">
-							<br>
-							<h4 class="inc-side">
-								Sizzling Hot Plate
+							<h4 class="collapsed menu-collapse" data-toggle="collapse" data-target="#clay-hot-pot-collapse">
+								<span class="inc-side">
+									Clay Hot Pot
+								</span>
 							</h4>
-							<ul>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">38.</span><span class="menu-item">Three Peppers w. Chicken</span></div>
-									<span class="menu-price">9.75</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">38.</span><span class="menu-item">Three Peppers w. Beef</span></div>
-									<span class="menu-price">10.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">39.</span><span class="menu-item">Black Pepper Sauce Chicken</span></div>
-									<span class="menu-price">9.75</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">39.</span><span class="menu-item">Black Pepper Sauce Beef</span></div>
-									<span class="menu-price">10.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">40.</span><span class="menu-item">Fish Fillet w. Basil</span></div>
-									<span class="menu-price">10.50</span>
-								</li>
-							</ul>
-							<div style="clear:both;"></div>
+							<div class="collapse panel-collapse" id="clay-hot-pot-collapse">
+								<ul>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">31.</span><span class="menu-item">Vegetable Tofu</span></div>
+										<span class="menu-price">8.95</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">32.</span><span class="menu-item">Basil Eggplant</span></div>
+										<span class="menu-price">8.95</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">32a.</span><span class="menu-item">Basil Eggplant Chicken</span></div>
+										<span class="menu-price">9.75</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">32b.</span><span class="menu-item">Basil Eggplant Beef or Shrimp</span></div>
+										<span class="menu-price">11.00</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">33.</span><span class="menu-item">Fresh Whole Garlic w. Shrimp, Scallop, or Fish</span></div>
+										<span class="menu-price">11.00/ 12.00/ 11.00</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">34.</span><span class="menu-item">Seafood Tofu</span></div>
+										<span class="menu-price">13.95</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">35.</span><span class="menu-item">Duck w. Shan Hai Green</span></div>
+										<span class="menu-price">15.00</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">36.</span><span class="menu-item">Sha Cha B.B.Q. Sauce Chicken</span></div>
+										<span class="menu-price">10.00</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">36.</span><span class="menu-item">Sha Cha B.B.Q. Sauce Beef, Shrimp, Fish</span></div>
+										<span class="menu-price">11.25</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">36.</span><span class="menu-item">Sha Cha B.B.Q. Sauce Seafood</span></div>
+										<span class="menu-price">13.95</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">37.</span><span class="menu-item">Fish Tofu w. Chili Bean Sauce</span></div>
+										<span class="menu-price">11.25</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">37a.</span><span class="menu-item">Szechuan Spice Beef</span></div>
+										<span class="menu-price">11.55</span>
+									</li>
+								</ul>
+							</div>
+							<!-- <div style="clear:both;"></div> -->
 						</div>
-
+						<!-- </div> -->
+						<!-- <div class="row"> -->
 						<div class="col-sm-6 col-md-6 menu-col">
-							<br>
-							<h4 class="inc-side">
-								Vegetable
+							<h4 class="collapsed menu-collapse" data-toggle="collapse" data-target="#sizzling-collapse">
+								<span class="inc-side">
+									Sizzling Hot Plate
+								</span>
 							</h4>
-							<ul>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">41a.</span><span class="menu-item">Mixed Mushroom w. Shanghai Green</span></div>
-									<span class="menu-price">9.95</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">41b.</span><span class="menu-item">Budda Supreme (Tofu, Mixed Veg. &amp; Green Bean)</span></div>
-									<span class="menu-price">10.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">41.</span><span class="menu-item">Deep Fried Eggplant</span></div>
-									<span class="menu-price">8.95</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">42.</span><span class="menu-item">Ma Po Tofu</span></div>
-									<span class="menu-price">8.00</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">43.</span><span class="menu-item">Deep Fried Green Bean</span></div>
-									<span class="menu-price">7.95</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">44.</span><span class="menu-item">Vegetable Triple Delight</span></div>
-									<span class="menu-price">8.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">45.</span><span class="menu-item">Mix Vegetable Delight</span></div>
-									<span class="menu-price">8.25</span>
-								</li>
-							</ul>
-							<div style="clear:both;"></div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-6 col-md-6 menu-col">
-							<br>
-							<h4 class="inc-side">
-								Seafood
-							</h4>
-							<ul>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">46a.</span><span class="menu-item">Shrimp or Scallop or Fish w. XO Sauce</span></div>
-									<span class="menu-price">10.50/ 11.00/ 10.00</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">46.</span><span class="menu-item">Scallop or Shrimp w. Snow Peas or Asparagus</span></div>
-									<span class="menu-price">11.00/ 10.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">47.</span><span class="menu-item">Shrimp w. Hot Pepper and Leek</span></div>
-									<span class="menu-price">10.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">48.</span><span class="menu-item">Shrimp w. Sesame or General Tso's</span></div>
-									<span class="menu-price">10.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">49.</span><span class="menu-item">Shrimp w. Salt &amp; Hot Pepper</span></div>
-									<span class="menu-price">10.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">50.</span><span class="menu-item">Szechuan Bang Bang Shrimp</span></div>
-									<span class="menu-price">10.95</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">51.</span><span class="menu-item">Shrimp w. Broccoli</span></div>
-									<span class="menu-price">10.25</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">52.</span><span class="menu-item">Kung Pao Shrimp Szechuan Style</span></div>
-									<span class="menu-price">10.25</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">53.</span><span class="menu-item">Bamboo Fish</span></div>
-									<span class="menu-price">11.00</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">54.</span><span class="menu-item">Boiled Fish w. Hot Pepper Bean Sauce </span></div>
-									<span class="menu-price">11.00</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">55.</span><span class="menu-item">Hunan Hot &amp; Sour Fish Home Style</span></div>
-									<span class="menu-price">11.00</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">56.</span><span class="menu-item">Kong Pao Calamari Szechuan Style</span></div>
-									<span class="menu-price">9.00</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">57.</span><span class="menu-item">Calamari w. Hot Pepper and Salt</span></div>
-									<span class="menu-price">9.00</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">58.</span><span class="menu-item">Seafood Treasure</span></div>
-									<span class="menu-price">13.00</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">59a.</span><span class="menu-item">Shrimp with Lobster Sauce</span></div>
-									<span class="menu-price">10.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">59b.</span><span class="menu-item">House Special Pan Fried Fish (Whole Fish)</span></div>
-									<span class="menu-price">Special</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">59c.</span><span class="menu-item">Thai Basil Garlic Fish or Shrimp</span></div>
-									<span class="menu-price">10.00/ 10.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">59d.</span><span class="menu-item">Sweet &amp; Chili Fish</span></div>
-									<span class="menu-price">10.00</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">59.</span><span class="menu-item">Shrimp W. Vegetable</span></div>
-									<span class="menu-price">10.50</span>
-								</li>
-							</ul>
-							<div style="clear:both;"></div>
+							<div class="collapse panel-collapse" id="sizzling-collapse">
+								<ul>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">38.</span><span class="menu-item">Three Peppers w. Chicken</span></div>
+										<span class="menu-price">10.25</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">38.</span><span class="menu-item">Three Peppers w. Beef</span></div>
+										<span class="menu-price">11.00</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">39.</span><span class="menu-item">Black Pepper Sauce Chicken</span></div>
+										<span class="menu-price">10.25</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">39.</span><span class="menu-item">Black Pepper Sauce Beef</span></div>
+										<span class="menu-price">11.00</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">40.</span><span class="menu-item">Fish Fillet w. Basil</span></div>
+										<span class="menu-price">11.00</span>
+									</li>
+								</ul>
+							</div>
+							<!-- <div style="clear:both;"></div> -->
 						</div>
 
 						<div class="col-sm-6 col-md-6 menu-col">
-							<br>
-							<h4 class="inc-side">
-								Pork/Beef/Lamb
+							<h4 class="collapsed menu-collapse" data-toggle="collapse" data-target="#vegetable-collapse">
+								<span class="inc-side">
+									Vegetable
+								</span>
 							</h4>
-							<ul>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">60a.</span><span class="menu-item">Pork or Beef w. Leek</span></div>
-									<span class="menu-price">9.25/ 9.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">61.</span><span class="menu-item">Jing Jiang Pork</span></div>
-									<span class="menu-price">8.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">62.</span><span class="menu-item">Pork or Beef w. Garlic Sauce</span></div>
-									<span class="menu-price">8.50/ 9.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">63.</span><span class="menu-item">Beef w. Broccoli</span></div>
-									<span class="menu-price">9.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">64.</span><span class="menu-item">Mongolian Beef Korean Style</span></div>
-									<span class="menu-price">9.75</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">65a.</span><span class="menu-item">Kingdom Beef</span></div>
-									<span class="menu-price">9.95</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">65.</span><span class="menu-item">Orange Peel Beef</span></div>
-									<span class="menu-price">9.95</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">66.</span><span class="menu-item">Crispy Beef</span></div>
-									<span class="menu-price">9.75</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">67.</span><span class="menu-item">Boiled Hot Pepper Beef</span></div>
-									<span class="menu-price">10.95</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">68.</span><span class="menu-item">Cumin Beef</span></div>
-									<span class="menu-price">10.95</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">69.</span><span class="menu-item">Cumin Lamb</span></div>
-									<span class="menu-price">12.00</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">70.</span><span class="menu-item">Lamb w. Red Pepper</span></div>
-									<span class="menu-price">12.00</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">71a.</span><span class="menu-item">Beef w. Snow Peas or Asparagus</span></div>
-									<span class="menu-price">9.50/ 9.75</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">71b.</span><span class="menu-item">Hunan Beef</span></div>
-									<span class="menu-price">9.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">71c.</span><span class="menu-item">Green Onion &amp; Hot Pepper Beef</span></div>
-									<span class="menu-price">9.75</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">71.</span><span class="menu-item">Beef with Vegetable</span></div>
-									<span class="menu-price">9.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">72.</span><span class="menu-item">Lamb Chop (6)</span></div>
-									<span class="menu-price">18.00</span>
-								</li>
-							</ul>
-							<div style="clear:both;"></div>
+							<div class="collapse panel-collapse" id="vegetable-collapse">
+								<ul>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">41a.</span><span class="menu-item">Mixed Mushroom w. Shanghai Green</span></div>
+										<span class="menu-price">11.00</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">41b.</span><span class="menu-item">Budda Supreme (Tofu, Mixed Veg. &amp; Green Bean)</span></div>
+										<span class="menu-price">11.00</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">41.</span><span class="menu-item">Deep Fried Eggplant</span></div>
+										<span class="menu-price">9.50</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">42.</span><span class="menu-item">Ma Po Tofu</span></div>
+										<span class="menu-price">8.00</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">43.</span><span class="menu-item">Deep Fried Green Bean</span></div>
+										<span class="menu-price">8.00</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">44.</span><span class="menu-item">Vegetable Triple Delight</span></div>
+										<span class="menu-price">9.00</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">45.</span><span class="menu-item">Mix Vegetable Delight</span></div>
+										<span class="menu-price">8.50</span>
+									</li>
+								</ul>
+							</div>
+							<!-- <div style="clear:both;"></div> -->
 						</div>
-					</div>
-					<div class="row">
+						<!-- </div> -->
+						<!-- <div class="row"> -->
 						<div class="col-sm-6 col-md-6 menu-col">
-							<br>
-							<h4>
+							<h4 class="collapsed menu-collapse" data-toggle="collapse" data-target="#seafood-collapse">
+								<span class="inc-side">
+									Seafood
+								</span>
+							</h4>
+							<div class="collapse panel-collapse" id="seafood-collapse">
+								<ul>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">46a.</span><span class="menu-item">Shrimp or Scallop or Fish w. XO Sauce</span></div>
+										<span class="menu-price">12.00/ 11.00</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">46.</span><span class="menu-item">Scallop or Shrimp w. Snow Peas or Asparagus</span></div>
+										<span class="menu-price">12.00/ 11.00</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">47.</span><span class="menu-item">Shrimp w. Hot Pepper and Leek</span></div>
+										<span class="menu-price">11.00</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">48.</span><span class="menu-item">Shrimp w. Sesame or General Tso's</span></div>
+										<span class="menu-price">11.00</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">49.</span><span class="menu-item">Shrimp w. Salt &amp; Hot Pepper</span></div>
+										<span class="menu-price">11.00</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">50.</span><span class="menu-item">Szechuan Bang Bang Shrimp</span></div>
+										<span class="menu-price">11.50</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">51.</span><span class="menu-item">Shrimp w. Broccoli</span></div>
+										<span class="menu-price">11.00</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">52.</span><span class="menu-item">Kung Pao Shrimp Szechuan Style</span></div>
+										<span class="menu-price">11.00</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">53.</span><span class="menu-item">Bamboo Fish</span></div>
+										<span class="menu-price">11.95</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">54.</span><span class="menu-item">Boiled Fish w. Hot Pepper Bean Sauce </span></div>
+										<span class="menu-price">11.95</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">55.</span><span class="menu-item">Hunan Hot &amp; Sour Fish Home Style</span></div>
+										<span class="menu-price">12.00</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">56.</span><span class="menu-item">Kong Pao Calamari Szechuan Style</span></div>
+										<span class="menu-price">9.50</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">57.</span><span class="menu-item">Calamari w. Hot Pepper and Salt</span></div>
+										<span class="menu-price">10.00</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">58.</span><span class="menu-item">Seafood Treasure</span></div>
+										<span class="menu-price">13.95</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">59a.</span><span class="menu-item">Shrimp with Lobster Sauce</span></div>
+										<span class="menu-price">11.00</span>
+									</li>
+									<!--
+											<li class="hidden">
+												<div class="menu-left"><span class="menu-item-number spicy">59b.</span><span class="menu-item">House Special Pan Fried Fish (Whole Fish)</span></div>
+												<span class="menu-price">Special</span>
+											</li>
+											-->
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">59c.</span><span class="menu-item">Thai Basil Garlic Fish or Shrimp</span></div>
+										<span class="menu-price">11.50</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">59d.</span><span class="menu-item">Sweet &amp; Chili Fish</span></div>
+										<span class="menu-price">11.00</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">59.</span><span class="menu-item">Shrimp W. Vegetable</span></div>
+										<span class="menu-price">11.00</span>
+									</li>
+								</ul>
+							</div>
+							<!-- <div style="clear:both;"></div> -->
+						</div>
+
+						<div class="col-sm-6 col-md-6 menu-col">
+							<h4 class="collapsed menu-collapse" data-toggle="collapse" data-target="#pork-collapse">
+								<span class="inc-side">
+									Pork/Beef/Lamb
+								</span>
+							</h4>
+							<div class="collapse panel-collapse" id="pork-collapse">
+								<ul>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">60a.</span><span class="menu-item">Beef w. Leek</span></div>
+										<span class="menu-price">9.75</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">61.</span><span class="menu-item">Jing Jiang Pork</span></div>
+										<span class="menu-price">8.95</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">62.</span><span class="menu-item">Pork or Beef w. Garlic Sauce</span></div>
+										<span class="menu-price">8.95/ 9.75</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">63.</span><span class="menu-item">Beef w. Broccoli</span></div>
+										<span class="menu-price">9.75</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">64.</span><span class="menu-item">Mongolian Beef Korean Style</span></div>
+										<span class="menu-price">10.50</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">65a.</span><span class="menu-item">Kingdom Beef</span></div>
+										<span class="menu-price">10.50</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">65.</span><span class="menu-item">Orange Peel Beef</span></div>
+										<span class="menu-price">10.50</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">66.</span><span class="menu-item">Crispy Beef</span></div>
+										<span class="menu-price">10.50</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">67.</span><span class="menu-item">Boiled Hot Pepper Beef</span></div>
+										<span class="menu-price">11.95</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">68.</span><span class="menu-item">Cumin Beef</span></div>
+										<span class="menu-price">11.95</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">69.</span><span class="menu-item">Cumin Lamb</span></div>
+										<span class="menu-price">12.50</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">70.</span><span class="menu-item">Lamb w. Red Pepper</span></div>
+										<span class="menu-price">12.00</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">71a.</span><span class="menu-item">Beef w. Snow Peas or Asparagus</span></div>
+										<span class="menu-price">9.95</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">71b.</span><span class="menu-item">Hunan Beef</span></div>
+										<span class="menu-price">9.75</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">71c.</span><span class="menu-item">Green Onion &amp; Hot Pepper Beef</span></div>
+										<span class="menu-price">9.75</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">71.</span><span class="menu-item">Beef with Vegetable</span></div>
+										<span class="menu-price">9.75</span>
+									</li>
+									<!--
+											<li class="hidden">
+												<div class="menu-left"><span class="menu-item-number">72.</span><span class="menu-item">Lamb Chop (6)</span></div>
+												<span class="menu-price">18.00</span>
+											</li>
+											-->
+								</ul>
+								<div class="hidden-xs hidden-sm "><br><br></div>
+							</div>
+							<!-- <div style="clear:both;"></div> -->
+						</div>
+						<!-- </div> -->
+						<!-- <div class="row"> -->
+						<div class="col-sm-6 col-md-6 menu-col">
+
+							<h4 class="collapsed menu-collapse" data-toggle="collapse" data-target="#fried-rice-collapse">
 								Fried Rice
 							</h4>
-							<ul>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">73.</span><span class="menu-item">Vegetable Fried Rice</span></div>
-									<span class="menu-price">7.25</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">74.</span><span class="menu-item">Chicken or Pork Fried Rice</span></div>
-									<span class="menu-price">7.55</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">75.</span><span class="menu-item">Beef or Shrimp Fried Rice</span></div>
-									<span class="menu-price">7.95/ 8.25</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">76.</span><span class="menu-item">House Special Fried Rice</span></div>
-									<span class="menu-price">8.75</span>
-								</li>
-							</ul>
-							<div style="clear:both;"></div>
+							<div class="collapse panel-collapse" id="fried-rice-collapse">
+								<ul>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">73.</span><span class="menu-item">Vegetable Fried Rice</span></div>
+										<span class="menu-price">7.50</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">74.</span><span class="menu-item">Chicken or Pork Fried Rice</span></div>
+										<span class="menu-price">7.95</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">75.</span><span class="menu-item">Beef or Shrimp Fried Rice</span></div>
+										<span class="menu-price">8.50</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">76.</span><span class="menu-item">House Special Fried Rice</span></div>
+										<span class="menu-price">9.00</span>
+									</li>
+								</ul>
+							</div>
+							<!-- <div style="clear:both;"></div> -->
 						</div>
 
 						<div class="col-sm-6 col-md-6 menu-col">
-							<br>
-							<h4>
+							<h4 class="collapsed menu-collapse" data-toggle="collapse" data-target="#lo-mein-collapse">
 								Lo Mein
 							</h4>
-							<ul>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">77.</span><span class="menu-item">Vegetable Lo Mein</span></div>
-									<span class="menu-price">7.25</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">78.</span><span class="menu-item">Chicken or Pork Lo Mein</span></div>
-									<span class="menu-price">7.75</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">79.</span><span class="menu-item">Beef or Shrimp Lo Mein</span></div>
-									<span class="menu-price">7.95/ 8.25</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">80.</span><span class="menu-item">House Special Lo Mein</span></div>
-									<span class="menu-price">8.75</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">81.</span><span class="menu-item">Singapore Rice Noodle</span></div>
-									<span class="menu-price">9.25</span>
-								</li>
-							</ul>
-							<div style="clear:both;"></div>
+							<div class="collapse panel-collapse" id="lo-mein-collapse">
+								<ul>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">77.</span><span class="menu-item">Vegetable Lo Mein</span></div>
+										<span class="menu-price">7.50</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">78.</span><span class="menu-item">Chicken or Pork Lo Mein</span></div>
+										<span class="menu-price">7.95</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">79.</span><span class="menu-item">Beef or Shrimp Lo Mein</span></div>
+										<span class="menu-price">8.50</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">80.</span><span class="menu-item">House Special Lo Mein</span></div>
+										<span class="menu-price">9.00</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">81.</span><span class="menu-item">Singapore Rice Noodle</span></div>
+										<span class="menu-price">9.50</span>
+									</li>
+								</ul>
+							</div>
+							<!-- <div style="clear:both;"></div> -->
 						</div>
-					</div>
-					<div class="row">
+						<!-- </div> -->
+						<!-- <div class="row"> -->
 						<div class="col-sm-6 col-md-6 menu-col">
-							<br>
-							<h4>
+							<h4 class="collapsed menu-collapse" data-toggle="collapse" data-target="#pan-fried-noodle-collapse">
 								Pan Fried Noodle
 							</h4>
-							<ul>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">82.</span><span class="menu-item">Vegetable Pan Fried Noodle</span></div>
-									<span class="menu-price">8.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">83.</span><span class="menu-item">Triple Delight Pan Fried Noodle</span></div>
-									<span class="menu-price">10.25</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">84.</span><span class="menu-item">Seafood Pan Fried Noodle</span></div>
-									<span class="menu-price">13.00</span>
-								</li>
-							</ul>
-							<div style="clear:both;"></div>
+							<div class="collapse panel-collapse" id="pan-fried-noodle-collapse">
+								<ul>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">82.</span><span class="menu-item">Vegetable Pan Fried Noodle</span></div>
+										<span class="menu-price">9.00</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">83.</span><span class="menu-item">Triple Delight Pan Fried Noodle</span></div>
+										<span class="menu-price">11.50</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">84.</span><span class="menu-item">Seafood Pan Fried Noodle</span></div>
+										<span class="menu-price">13.95</span>
+									</li>
+								</ul>
+							</div>
+							<!-- <div style="clear:both;"></div> -->
 						</div>
 
 						<div class="col-sm-6 col-md-6 menu-col">
-							<br>
-							<h4>
+							<h4 class="collapsed menu-collapse" data-toggle="collapse" data-target="#side-collapse">
 								Side Order
 							</h4>
-							<ul>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">85.</span><span class="menu-item">Fountain Drink</span></div>
-									<span class="menu-price">1.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">86.</span><span class="menu-item">Milk</span></div>
-									<span class="menu-price">1.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">87.</span><span class="menu-item">Orange Juice </span></div>
-									<span class="menu-price">1.75</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">88.</span><span class="menu-item">Apple Juice</span></div>
-									<span class="menu-price">1.75</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">89.</span><span class="menu-item">Hot Tea</span></div>
-									<span class="menu-price">1.25</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">90.</span><span class="menu-item">Crispy Noodles</span></div>
-									<span class="menu-price">0.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">91.</span><span class="menu-item">White Rice (Sm/Lg)</span></div>
-									<span class="menu-price">1.50/ 3.00</span>
-								</li>
-							</ul>
-							<div style="clear:both;"></div>
+							<div class="collapse panel-collapse" id="side-collapse">
+								<ul>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">85.</span><span class="menu-item">Fountain Drink</span></div>
+										<span class="menu-price">1.50</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">86.</span><span class="menu-item">Milk</span></div>
+										<span class="menu-price">1.50</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">87.</span><span class="menu-item">Orange Juice </span></div>
+										<span class="menu-price">1.75</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">88.</span><span class="menu-item">Apple Juice</span></div>
+										<span class="menu-price">1.75</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">89.</span><span class="menu-item">Hot Tea</span></div>
+										<span class="menu-price">1.25</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">90.</span><span class="menu-item">Crispy Noodles</span></div>
+										<span class="menu-price">0.50</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">91.</span><span class="menu-item">White Rice (Sm/Lg)</span></div>
+										<span class="menu-price">1.50/ 3.00</span>
+									</li>
+								</ul>
+							</div>
+							<!-- <div style="clear:both;"></div> -->
 						</div>
 					</div>
-					<br>
 					<hr>
-					<div class="row vertical-align">
+					<h4 class="collapsed text-center menu-collapse" data-toggle="collapse" data-target="#lunch-row">
+						Lunch Special
+					</h4>
+					<div class="row vertical-align collapse panel-collapse" id="lunch-row">
 						<div class="col-xs-12 col-sm-8 col-md-7 col-lg-6 menu-col lunch-col">
-							<h4 class="text-center">
-								Lunch Special
-							</h4>
-							<p	class="text-center" style="font-size:14px; line-height:1.42857143; color:#333">
-								11:00am - 3:30pm <br>
-								Served with: <br>
-								Fried Rice or White Rice, <br>
-								Soup (Choice of Wonton, Egg Drop, or Hot &amp; Sour Soup), <br>
-								Vegetable Spring Roll &amp; Cheese Wonton
-							</p>
-							<ul>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">L1.</span><span class="menu-item">Pork or Chicken or Beef or Shrimp w. Leek</span></div>
-									<span class="menu-price">6.26/ 6.50/ 6.75</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">L2.</span><span class="menu-item">Pork or Chicken or Beef or Shrimp w. Garlic Sauce</span></div>
-									<span class="menu-price">6.26/ 6.50/ 6.75</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">L3.</span><span class="menu-item">Chicken or Beef or Shrimp w. Broccoli</span></div>
-									<span class="menu-price">6.26/ 6.50/ 6.75</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">L4.</span><span class="menu-item">Sesame Chicken</span></div>
-									<span class="menu-price">6.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">L5.</span><span class="menu-item">Orange Peel Chicken</span></div>
-									<span class="menu-price">6.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">L6.</span><span class="menu-item">General Tso's Chicken</span></div>
-									<span class="menu-price">6.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">L7.</span><span class="menu-item">Sweet Chili Chicken or Fish Fillet</span></div>
-									<span class="menu-price">6.25/ 6.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">L8.</span><span class="menu-item">Sweet &amp; Sour Chicken</span></div>
-									<span class="menu-price">6.25</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">L9.</span><span class="menu-item">Green Onion and Hot Pepper Chicken or Beef</span></div>
-									<span class="menu-price">6.25/ 6.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">L10.</span><span class="menu-item">Chicken or Beef or Shrimp w. Vegetable</span></div>
-									<span class="menu-price">6.25/ 6.50/ 6.75</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">L12.</span><span class="menu-item">Shrimp w. Lobster Sauce</span></div>
-									<span class="menu-price">6.75</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">L13.</span><span class="menu-item">Chicken or Beef or Baby Shrimp w. Green Bean</span></div>
-									<span class="menu-price">6.25/ 6.50/ 6.75</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">L14.</span><span class="menu-item">Eggplant w. Garlic Sauce</span></div>
-									<span class="menu-price">6.05</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">L15.</span><span class="menu-item">Chicken or Beef or Shrimp w. Eggplant in Garlic Sauce</span></div>
-									<span class="menu-price">6.25/ 6.50/ 6.75</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">L16.</span><span class="menu-item">Mixed Vegetables</span></div>
-									<span class="menu-price">6.05</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">L17.</span><span class="menu-item">Mixed Vegetables &amp; Tofu</span></div>
-									<span class="menu-price">6.25</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">L18.</span><span class="menu-item">Black Pepper Chicken</span></div>
-									<span class="menu-price">6.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">L19.</span><span class="menu-item">Curry Chicken or Beef or Shrimp</span></div>
-									<span class="menu-price">6.25/ 6.50/ 6.75</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">L20.</span><span class="menu-item">Pepper Steak</span></div>
-									<span class="menu-price">6.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">L21.</span><span class="menu-item">Chicken and Shrimp w. Green Pepper and Onion</span></div>
-									<span class="menu-price">6.50</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">L22.</span><span class="menu-item">Ginger and Basil Chicken or Shrimp or Beef</span></div>
-									<span class="menu-price">6.25/ 6.50/ 6.75</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">L23.</span><span class="menu-item">Kung Pao Chicken or Shrimp</span></div>
-									<span class="menu-price">6.50/ 6.75</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">L24.</span><span class="menu-item">Chicken or Shrimp or Beef Chow Mein</span></div>
-									<span class="menu-price">5.95/ 6.25</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">L25.</span><span class="menu-item">Chicken or Beef or Shrimp w. Snow Peas</span></div>
-									<span class="menu-price">6.25/ 6.50/ 6.75</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">L26.</span><span class="menu-item">Chicken or Beef or Shrimp w. Asparagus</span></div>
-									<span class="menu-price">6.25/ 6.50/ 6.75</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">L27.</span><span class="menu-item">Hunan Chicken or Beef or Shrimp</span></div>
-									<span class="menu-price">6.25/ 6.50/ 6.75</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number spicy">L28.</span><span class="menu-item">Szechuan Chicken or Beef or Shrimp</span></div>
-									<span class="menu-price">6.25/ 6.50/ 6.75</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">L29.</span><span class="menu-item">Moo Goo Gai Pau</span></div>
-									<span class="menu-price">6.25</span>
-								</li>
-								<li>
-									<div class="menu-left"><span class="menu-item-number">L30.</span><span class="menu-item">Chicken or Shrimp w. Cashnut</span></div>
-									<span class="menu-price">6.50/ 6.75</span>
-								</li>
-							</ul>
-							<div style="clear:both;"></div>
+							<div id="lunch-collapse">
+								<p	class="text-center" style="font-size:14px; line-height:1.42857143; color:#333">
+									11:00am - 3:30pm <br>
+									Served with: <br>
+									Fried Rice or White Rice, <br>
+									Soup (Choice of Wonton, Egg Drop, or Hot &amp; Sour Soup), <br>
+									Vegetable Spring Roll &amp; Cheese Wonton
+								</p>
+								<ul>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">L1.</span><span class="menu-item">Pork or Chicken or Beef or Shrimp w. Leek</span></div>
+										<span class="menu-price">6.26/ 6.75</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">L2.</span><span class="menu-item">Pork or Chicken or Beef or Shrimp w. Garlic Sauce</span></div>
+										<span class="menu-price">6.26/ 6.75</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">L3.</span><span class="menu-item">Chicken or Beef or Shrimp w. Broccoli</span></div>
+										<span class="menu-price">6.26/ 6.75</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">L4.</span><span class="menu-item">Sesame Chicken</span></div>
+										<span class="menu-price">6.50</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">L5.</span><span class="menu-item">Orange Peel Chicken</span></div>
+										<span class="menu-price">6.50</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">L6.</span><span class="menu-item">General Tso's Chicken</span></div>
+										<span class="menu-price">6.50</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">L7.</span><span class="menu-item">Sweet Chili Chicken or Fish Fillet</span></div>
+										<span class="menu-price">6.50</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">L8.</span><span class="menu-item">Sweet &amp; Sour Chicken</span></div>
+										<span class="menu-price">6.25</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">L9.</span><span class="menu-item">Green Onion and Hot Pepper Chicken or Beef</span></div>
+										<span class="menu-price">6.75</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">L10.</span><span class="menu-item">Chicken or Beef or Shrimp w. Vegetable</span></div>
+										<span class="menu-price">6.25/ 6.75</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">L12.</span><span class="menu-item">Shrimp w. Lobster Sauce</span></div>
+										<span class="menu-price">6.75</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">L13.</span><span class="menu-item">Chicken or Beef or Baby Shrimp w. Green Bean</span></div>
+										<span class="menu-price">6.25/ 6.75</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">L14.</span><span class="menu-item">Eggplant w. Garlic Sauce</span></div>
+										<span class="menu-price">6.25</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">L15.</span><span class="menu-item">Chicken or Beef or Shrimp w. Eggplant in Garlic Sauce</span></div>
+										<span class="menu-price">6.25/ 6.75</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">L16.</span><span class="menu-item">Mixed Vegetables</span></div>
+										<span class="menu-price">6.25</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">L17.</span><span class="menu-item">Mixed Vegetables &amp; Tofu</span></div>
+										<span class="menu-price">6.25</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">L18.</span><span class="menu-item">Black Pepper Chicken</span></div>
+										<span class="menu-price">6.50</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">L19.</span><span class="menu-item">Curry Chicken or Beef or Shrimp</span></div>
+										<span class="menu-price">6.25/ 6.75</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">L20.</span><span class="menu-item">Pepper Steak</span></div>
+										<span class="menu-price">6.75</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">L21.</span><span class="menu-item">Chicken and Shrimp w. Green Pepper and Onion</span></div>
+										<span class="menu-price">6.75</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">L22.</span><span class="menu-item">Ginger and Basil Chicken or Shrimp or Beef</span></div>
+										<span class="menu-price">6.50/ 6.75</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">L23.</span><span class="menu-item">Kung Pao Chicken or Shrimp</span></div>
+										<span class="menu-price">6.50/ 6.75</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">L24.</span><span class="menu-item">Chicken or Shrimp or Beef Chow Mein</span></div>
+										<span class="menu-price">6.50/ 6.75</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">L25.</span><span class="menu-item">Chicken or Beef or Shrimp w. Snow Peas</span></div>
+										<span class="menu-price">6.50/ 6.75</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">L26.</span><span class="menu-item">Chicken or Beef or Shrimp w. Asparagus</span></div>
+										<span class="menu-price">6.50/ 6.75</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">L27.</span><span class="menu-item">Hunan Chicken or Beef or Shrimp</span></div>
+										<span class="menu-price">6.50/ 6.75</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number spicy">L28.</span><span class="menu-item">Szechuan Chicken or Beef or Shrimp</span></div>
+										<span class="menu-price">6.25/ 6.75</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">L29.</span><span class="menu-item">Moo Goo Gai Pau</span></div>
+										<span class="menu-price">6.25</span>
+									</li>
+									<li>
+										<div class="menu-left"><span class="menu-item-number">L30.</span><span class="menu-item">Chicken or Shrimp w. Cashnut</span></div>
+										<span class="menu-price">6.50/ 6.75</span>
+									</li>
+								</ul>
+							</div>
+							<!-- <div style="clear:both;"></div> -->
 						</div>
-						<div class="col-xs-12 col-sm-4 col-md-5 col-lg-5 col-lg-offset-1">
-							<br>
+						<div class="col-xs-12 col-sm-4 col-md-5 col-lg-5 col-lg-offset-1" id="lunch-img">
 							<div class="thumbnail img-spacer" style="margin-bottom:0px; margin-right:12px">
 								<img class="img-responsive img-border img-right img-rounded " src="img/Ginger-Basil-Chicken-Lunch.jpg" alt="">
 								<div class="caption">
@@ -905,7 +966,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 text-center">
-						<p>Copyright &copy; <strong>Grand China Bistro</strong> 2015
+						<p>Copyright &copy; <strong>Grand China Bistro</strong> 2017
 							<br>
 							<small>Website Produced by <a href="https://nigelarmstrong.me">Nigel Armstrong</a></small>
 						</p>

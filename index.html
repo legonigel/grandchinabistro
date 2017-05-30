@@ -27,9 +27,9 @@
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-		<![endif]-->
+				<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+				<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+				<![endif]-->
 
 		<!-- Google Analytics -->
 		<script>
@@ -84,6 +84,7 @@
 					<!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
 					<a class="navbar-brand" href="index.html">Grand China Bistro</a>
 					<a class="navbar-brand" href="tel:+17578686177" style="color:#4273A2; text-decoration: underline;">757.868.6177</a>
+					<a class="navbar-toggle navbar-brand" style="height:auto" data-toggle="collapse" data-target="#navbar-hours">Hours</a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -92,7 +93,7 @@
 							<a href="index.html">Home</a>
 						</li>
 						<li>
-							<a href="about.html">About</a>
+							<a href="about.html" id="nav-about">About<div class="hidden-xs">(Hours)</div></a>
 						</li>
 						<li>
 							<a href="menu.html">Menu</a>
@@ -100,6 +101,20 @@
 					</ul>
 				</div>
 				<!-- /.navbar-collapse -->
+				<div class="collapse navbar-collapse" id="navbar-hours">
+					<h3>Hours</h3>
+					<div class="center-block" style="width:260px">
+						<dl class="dl-bistro">
+							<dt>Monday: </dt><dd>3:00 pm - 9:00 pm</dd>
+							<dt>Tuesday: </dt><dd>11:00 am - 9:00 pm</dd>
+							<dt>Wednesday: </dt><dd>11:00 am - 9:00 pm</dd>
+							<dt>Thursday: </dt><dd>11:00 am - 9:00 pm</dd>
+							<dt>Friday: </dt><dd>11:00 am - 10:00 pm</dd>
+							<dt>Saturday: </dt><dd>3:00 pm - 10:00 pm</dd>
+							<dt>Sunday: </dt><dd>3:00 pm - 9:00 pm</dd>
+						</dl>
+					</div>
+				</div>
 			</div>
 			<!-- /.container -->
 		</nav>
@@ -139,7 +154,7 @@
 							</a>
 						</div>
 						<h2 class="brand-before">
-							<small>Welcome to</small>
+							<small>Welcome to the</small>
 						</h2>
 						<h1 class="brand-name">Grand China Bistro</h1>
 						<hr class="tagline-divider">
@@ -166,7 +181,7 @@
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-8">
 					<hr class="visible-xs">
-					<p>The <strong>Grand China Bistro</strong> is a small restaurant in Poquoson, Va. We specialize in authentic Jiang Su style cuisine. All our food is made to order and cooked fresh. We offer dine-in, carry-out, pick-up, or delivery.	 Come enjoy your dinner with us and our guanine Chinese entrees.	</p>
+					<p>The <strong>Grand China Bistro</strong> is a small restaurant in Poquoson, Va. We specialize in authentic Jiang Su style cuisine. All our food is made to order and cooked fresh. We offer dine-in, carry-out, pick-up, or delivery.	 Come enjoy your dinner with us and our genuine Chinese entrees.	</p>
 				</div>
 			</div>
 
@@ -177,7 +192,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 text-center">
-						<p>Copyright &copy; <strong>Grand China Bistro</strong> 2015
+						<p>Copyright &copy; <strong>Grand China Bistro</strong> 2017
 							<br>
 							<small>Website Produced by <a href="https://nigelarmstrong.me">Nigel Armstrong</a></small>
 						</p>
@@ -196,7 +211,7 @@
 		<!-- Script to Activate the Carousel -->
 		<script>
 			$('.carousel').carousel({
-				interval: 5000 //changes the speed
+			interval: 5000 //changes the speed
 			})
 		</script>
 
