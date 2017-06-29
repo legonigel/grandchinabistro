@@ -12,3 +12,12 @@ DirectoryIndex index.html
 RewriteEngine On
 RewriteCond %{HTTPS} on
 RewriteRule (.*) http://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+## Expires caching ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType img/jpg "access 1 month"
+ExpiresByType text/css "access 1 month"
+ExpiresByType application/javascript "access 1 month"
+</IfModule>
+
